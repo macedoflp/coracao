@@ -1,0 +1,137 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #a6e4ff, #ffffff);
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+    color: #0077b6;
+  }
+  
+  p {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #023e8a;
+    animation: fadeIn 4s ease-in-out;
+  }
+  
+  .container {
+    justify-items: center;
+  }
+  
+  /* Corações */
+  .heart {
+    position: absolute;
+    font-size: 2rem;
+    animation: floatUp 5s infinite ease-in-out;
+    opacity: 0.8;
+    color: #ff477e;
+  }
+  
+  @keyframes floatUp {
+    0% {
+      transform: translateY(100vh) scale(0.8);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-10vh) scale(1.2);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Botão */
+  button {
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #00b4d8;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    animation: fadeIn 6s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0077b6;
+    transform: scale(1.1);
+  }
+  
+  /* Modal */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    color: #333;
+    animation: fadeIn 0.5s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .modal-content h2 {
+    margin-bottom: 1rem;
+    color: #00b4d8;
+  }
+  
+  .modal-content p {
+    font-size: 1rem;
+  }
+  
+  .head-modal {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .close {
+    font-size: 1.5rem;
+    color: #ff477e;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .close:hover {
+    color: #ff1e56;
+  }
+  
